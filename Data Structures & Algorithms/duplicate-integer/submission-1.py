@@ -1,0 +1,10 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        map = set()
+        for n in nums:
+            if n not in map:
+                map.add(n)
+            else:
+                return True
+        return False
+        
